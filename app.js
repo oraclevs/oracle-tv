@@ -40,7 +40,7 @@ app.use(
 );
 app.use(cors());
 app.use(xss());
-app.use(express.static("public"))
+app.use(express.static("public"));
 
 //? Routes
 app.use("/movies/v1", UserRoute); //* movie routes for users
@@ -56,7 +56,7 @@ app.use(errorHandlerMiddleware);
 //?  DB and Port Engine
 const startServer = async () => {
   await ConectDB(process.env.MONGO_URL);
-  await app.listen(PORT, () => {
+  await app.listen(process.env.PORT, () => {
     console.log("port listening on port  3000");
   });
 };
