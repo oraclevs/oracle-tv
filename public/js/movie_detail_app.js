@@ -40,7 +40,6 @@ MobilehambugerBtn.addEventListener("click", () => {
 
 mobileNavBar_close_icon.addEventListener("click", () => {
   MobileNavbarBody.classList.remove("mobileNavBar");
-  MobileNavbarBody.removeEventListener("click", () => MobilehambugerBtn);
 });
 
 
@@ -50,13 +49,13 @@ const nav_search_icon = document.getElementById("nav-search-icon");
 const modal_cont = document.getElementById("modal_cont");
 
 nav_search_icon.addEventListener("click", () => {
+  MobileNavbarBody.classList.remove("mobileNavBar");
   modal_cont.classList.toggle("modalcont");
-   MobileNavbarBody.classList.remove("mobileNavBar");
   console.log("nav clicked");
 });
 nav_search_icon_mobile.addEventListener("click", () => {
+  MobileNavbarBody.classList.remove("mobileNavBar");
   modal_cont.classList.toggle("modalcont");
-   MobileNavbarBody.classList.remove("mobileNavBar");
   console.log("nav clicked");
 });
 
@@ -84,7 +83,6 @@ function mapSearch(MovieCard_continer, MovieDataName) {
 }
 
  Movieinput.addEventListener("change", (e) => {
-   console.log(Movieinput.value);
    const MoviesSearchByName = async () => {
      Ul_movie_list_cont.innerHTML = ` <li class="li_list_cont"><h2> LOADING... </h2></li>`;
      const SearchString = Movieinput.value;

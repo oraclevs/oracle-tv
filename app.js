@@ -56,7 +56,7 @@ app.use(errorHandlerMiddleware);
 //?  DB and Port Engine
 const startServer = async () => {
   await ConectDB(process.env.MONGO_URL);
-  await app.listen(process.env.PORT, () => {
+  await app.listen(PORT, () => {
     console.log("port listening on port  3000");
   });
 };

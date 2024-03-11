@@ -159,7 +159,6 @@ function pagecountup() {
 }
 
 movie_list_see_more_btn.addEventListener("click", () => {
-
   pagecountup();
   window.scrollTo(0, 500);
   location.href = `#more_moves_sec`;
@@ -290,13 +289,15 @@ let form = document.getElementById("form_input_holder");
 let nav_search_icon = document.getElementById("nav_search_icon");
 let nav_search_icon_mobile = document.getElementById("nav_search_icon_mobile");
 let modal_cont = document.getElementById("modal_cont");
-
+const MobileNavbarBody = document.getElementById("mobileNavBarid");
 //* Search Modal
 nav_search_icon.addEventListener("click", () => {
+  MobileNavbarBody.classList.remove("mobileNavBar");
   modal_cont.classList.toggle("modalcont");
   console.log("nav clicked");
 });
 nav_search_icon_mobile.addEventListener("click", () => {
+  MobileNavbarBody.classList.remove("mobileNavBar");
   modal_cont.classList.toggle("modalcont");
   console.log("nav clicked");
 });

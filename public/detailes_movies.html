@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,20 @@
     <meta name="description" content="OracleTV a free movie download ad-free website ">
     <meta name="author" content="Oracle(occ)">
     <link rel="shortcut icon" href="img/playntmiconx.png" type="image/x-icon">
+    <meta property="og:title" name="twitter:title" content="Default title" itemprop="name">
+    <meta property="og:site_name" name="" content="Default title" itemprop="">
+    <meta property="og:description" name="twitter:description" content="Default description" itemprop="description">
+    <meta property="og:type" name="" content="website" itemprop="">
+    <meta property="og:image" name="twitter:image:src" content="img/preview_web.png" itemprop="image">
+    <meta property="og:image:width" name="" content="300" itemprop="">
+    <meta property="og:image:height" name="" content="300" itemprop="">
+    <meta property="og:url" name="" content="" itemprop="">
+    <meta property="twitter:card" name="" content="summary_large_image" itemprop="">
+    <meta property="og:image:alt" name="twitter:image:alt" content="LOGO OracleTV" itemprop="">
     <meta http-equiv="Content-Security-Policy" content="img-src * data: https://i.postimg.cc;">
     <title>OracleTV | Movie Details</title>
 </head>
+
 <body>
     <!-- * NavBar   -->
     <nav class="navBar">
@@ -39,28 +51,28 @@
         <a class="AuthSignUp" href="signup.html" id="SignUpbtn">SignUp</a>
         <a href="login.html" class="AuthSignUp" id="loginbtn">Login</a>
     </div>
-    
-    <!-- * End of NavBar  -->
-<!--* mobileNavBar  -->
-<div class="mobileNavBar-nonedisplay" id="mobileNavBarid">
-    <span class="mobileNavBar_close_icon" id="mobileNavBar_close_icon"><i class="bi bi-x-circle"></i></span>
-    <div class="navlinks">
-        <ul>
-            <li><a href="#"><i class="bi bi-house-heart-fill"></i> Home</a></li>
-            <li><a href="#Action Movies-sec"><i class="bi bi-collection-play-fill"></i> Action Movies</a></li>
-            <li><a href="#popular-tv-shows-sec"><i class="bi bi-collection-play-fill"></i> Tv Shows</a></li>
-            <li><a href="#Movies-sec"><i class="bi bi-collection-play-fill"></i> New Movies</a></li>
-        </ul>
-    </div>
-    <div class="navicons">
-        <a href="#" class="nav-bell-icon"><i class="bi bi-bell-fill"></i> <span>notification</span></a>
-        <a href="#" id="nav_search_icon_mobile" class="nav-search-icon"><i class="bi bi-search"></i>
-            <span>search</span></a>
-        <a id="UserAuthbtn_mobile"><i class="bi bi-person-circle"></i> <span>signup/login</span></a>
-    </div>
-</div>
 
-<!--* End of mobileNavBar -->
+    <!-- * End of NavBar  -->
+    <!--* mobileNavBar  -->
+    <div class="mobileNavBar-nonedisplay" id="mobileNavBarid">
+        <span class="mobileNavBar_close_icon" id="mobileNavBar_close_icon"><i class="bi bi-x-circle"></i></span>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#"><i class="bi bi-house-heart-fill"></i> Home</a></li>
+                <li><a href="#Action Movies-sec"><i class="bi bi-collection-play-fill"></i> Action Movies</a></li>
+                <li><a href="#popular-tv-shows-sec"><i class="bi bi-collection-play-fill"></i> Tv Shows</a></li>
+                <li><a href="#Movies-sec"><i class="bi bi-collection-play-fill"></i> New Movies</a></li>
+            </ul>
+        </div>
+        <div class="navicons">
+            <a href="#" class="nav-bell-icon"><i class="bi bi-bell-fill"></i> <span>notification</span></a>
+            <a href="#" id="nav_search_icon_mobile" class="nav-search-icon"><i class="bi bi-search"></i>
+                <span>search</span></a>
+            <a id="UserAuthbtn_mobile"><i class="bi bi-person-circle"></i> <span>signup/login</span></a>
+        </div>
+    </div>
+
+    <!--* End of mobileNavBar -->
     <div class="movieDetails" id="movieDetails">
         <div class="movie_details_cont">
             <div class="movie_details_title">
@@ -76,17 +88,16 @@
                         <div class="description">
                             <h2>Description</h2>
                             <p id="allvideodescription" class="allvideodescription">
-                                <div class="loadin_det_cont" id="loadin_det_cont">
-                                    <span class="loader">Loading...</span>
-                                </div>
+                            <div class="loadin_det_cont" id="loadin_det_cont">
+                                <span class="loader">Loading...</span>
+                            </div>
                             </p>
                         </div>
-    
+
                         <!-- <p class="AllvideoRating">Average ratings: <span id="AllvideoRating"></span></p>
                             <p class="AllvideoReview">Average Review: <span><i id="AllvideoReview">12.3M</i></span></p> -->
                         <div class="youtube_iframe_holder">
-                            <iframe src=""
-                                title="YouTube video player" frameborder="0"
+                            <iframe src="" title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen id="iframe"></iframe>
                         </div>
@@ -101,7 +112,7 @@
                             </div>
                             <div class="cast">
                                 <h2>Cast</h2>
-                                <p id="cast"> 
+                                <p id="cast">
                                 </p>
                             </div>
                             <div class="writers">
@@ -120,9 +131,9 @@
                             </div>
                         </div>
                         <button id="movie_download_btn">Download <i class="bi bi-download"></i></button>
-    
+
                     </div>
-    
+
                 </div>
                 <div class="suggested_movies">
                     <h2>suggestions</h2>
@@ -131,38 +142,38 @@
                 </div>
             </div>
         </div>
-    
+
     </div>
 
-<div class="newsletter_section">
-    <h1>newsletter</h1>
-    <p>subscribe to our news letter. Be the first to get updated any time we release new movie(s).</p>
-    <div class="Newsletter_form_cont">
-        <form action="">
-            <div>
-                <input type="email" id="" placeholder="Email" required>
-                <button type="submit">Subscribe!</button>
+    <div class="newsletter_section">
+        <h1>newsletter</h1>
+        <p>subscribe to our news letter. Be the first to get updated any time we release new movie(s).</p>
+        <div class="Newsletter_form_cont">
+            <form action="">
+                <div>
+                    <input type="email" id="" placeholder="Email" required>
+                    <button type="submit">Subscribe!</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!--* search modals  -->
+    <div class="modalcont_non_Active" id="modal_cont">
+        <div class="searchmodal" id="searchmodal">
+            <h1 class="searchmodal_title">search for a Movie <i class="bi bi-search"></i></h1>
+            <div class="input_form_holder">
+
+                <input type="text" name="" id="Movieinput" placeholder="Movie Name">
+
             </div>
-
-        </form>
-    </div>
-</div>
-<!--* search modals  -->
-<div class="modalcont_non_Active" id="modal_cont">
-    <div class="searchmodal" id="searchmodal">
-        <h1 class="searchmodal_title">search for a Movie <i class="bi bi-search"></i></h1>
-        <div class="input_form_holder">
-
-            <input type="text" name="" id="Movieinput" placeholder="Movie Name">
-
-        </div>
-        <div class="search_result_cont" id="">
-            <ul id="Ul_movie_list_cont">
-                <h1 class="search_ul_text"> Search For your favorite Movie</h1>
-            </ul>
+            <div class="search_result_cont" id="">
+                <ul id="Ul_movie_list_cont">
+                    <h1 class="search_ul_text"> Search For your favorite Movie</h1>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
 
     <!-- * footer section -->
@@ -172,93 +183,94 @@
             <h2>Contact</h2>
             <address>
                 5534 Somewhere In Awka 92193-10212<br>
-    
+
                 <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
             </address>
         </div>
-    
+
         <ul class="footer__nav">
             <li class="nav__item">
                 <h2 class="nav__title"> Socail Media</h2>
-    
+
                 <ul class="nav__ul">
                     <li>
                         <a href="#">FaceBook</a>
                     </li>
-    
+
                     <li>
                         <a href="#">Instagrame</a>
                     </li>
-    
+
                     <li>
                         <a href="#"> Whatsapp</a>
                     </li>
                 </ul>
             </li>
-    
+
             <li class="nav__item nav__item--extra">
                 <h2 class="nav__title">Quick links</h2>
-    
+
                 <ul class="nav__ul nav__ul--extra">
                     <li>
                         <a href="#"> Home</a>
                     </li>
-    
+
                     <li>
                         <a href="#"> TV Shows</a>
                     </li>
-    
+
                     <li>
                         <a href="#"> Movies</a>
                     </li>
-    
+
                     <li>
                         <a href="#">New & popular</a>
                     </li>
-    
+
                     <li>
                         <a href="#"> New Movies</a>
                     </li>
                     <li>
                         <a href="#"> Popular TV Shows</a>
                     </li>
-    
+
                     <li>
                         <a href="#">Action Movies</a>
                     </li>
-    
+
                 </ul>
             </li>
-    
+
             <li class="nav__item">
                 <h2 class="nav__title">Legal</h2>
-    
+
                 <ul class="nav__ul">
                     <li>
                         <a href="#">Privacy Policy</a>
                     </li>
-    
+
                     <li>
                         <a href="#">Terms of Use</a>
                     </li>
-    
+
                     <li>
                         <a href="#">Sitemap</a>
                     </li>
                 </ul>
             </li>
         </ul>
-    
+
         <div class="legal">
             <p>&copy; 2023 Oracle. All rights reserved.</p>
-    
+
             <div class="legal__links">
                 <span>Made by <span class="heart">♥</span> Oracle_dev</span>
             </div>
         </div>
     </footer>
-    
+
     <script type="module" src="js/movie_detail_app.js"></script>
     <script type="module" src="js/movie_details_page.js"></script>
 </body>
+
 </html>
