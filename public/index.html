@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <meta name="description" content="OracleTV a free movie download ad-free website ">
+    <meta name="author" content="Oracle(occ)">
+    <link rel="shortcut icon" href="img/playntmiconx.png" type="image/x-icon">
+    <meta http-equiv="Content-Security-Policy" content="img-src * data: https://i.postimg.cc;">
+
+    <title>OracleTV</title>
+</head>
+
+<body>
+
+
+    <!-- * NavBar   -->
+    <nav class="navBar">
+        <div class="navlogo">
+            <a href="#">OracleTv</a>
+        </div>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Action Movies-sec">Action Movies</a></li>
+                <li><a href="#popular-tv-shows-sec">Tv Shows</a></li>
+                <li><a href="#Movies-sec">New Movies</a></li>
+            </ul>
+        </div>
+        <div class="navicons">
+            <a href="#" class="nav-bell-icon"><i class="bi bi-bell-fill"></i></a>
+            <a href="#" id="nav_search_icon" class="nav-search-icon"><i class="bi bi-search"></i></a>
+            <a id="UserAuthbtn" class="UserAuthbtn"><i class="bi bi-person-circle"></i></a>
+            <a class="nav-mobile-hambuger-icon" id="nav-mobile-hambuger-icon"><i class="bi bi-list"></i></a>
+        </div>
+    </nav>
+    <!--* auth Modal  -->
+    <div class="userAuthBtns " id="userAuthBtnsShowModal">
+        <p>login Or Sign Up </p>
+        <a class="AuthSignUp" href="#" id="SignUpbtn">SignUp</a>
+        <a href="#" class="AuthSignUp" id="loginbtn">Login</a>
+    </div>
+
+    <!-- * End of NavBar  -->
+    <!--* mobileNavBar  -->
+    <div class="mobileNavBar-nonedisplay" id="mobileNavBarid">
+        <span class="mobileNavBar_close_icon" id="mobileNavBar_close_icon"><i class="bi bi-x-circle"></i></span>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#"><i class="bi bi-house-heart-fill"></i> Home</a></li>
+                <li><a href="#Action Movies-sec"><i class="bi bi-collection-play-fill"></i> Action Movies</a></li>
+                <li><a href="#popular-tv-shows-sec"><i class="bi bi-collection-play-fill"></i> Tv Shows</a></li>
+                <li><a href="#Movies-sec"><i class="bi bi-collection-play-fill"></i> New Movies</a></li>
+            </ul>
+        </div>
+        <div class="navicons">
+            <a href="#" class="nav-bell-icon"><i class="bi bi-bell-fill"></i> <span>notification</span></a>
+            <a href="#" id="nav_search_icon_mobile" class="nav-search-icon"><i class="bi bi-search"></i>
+                <span>search</span></a>
+
+            <a id="UserAuthbtn_mobile"><i class="bi bi-person-circle"></i> <span>signup/login</span></a>
+        </div>
+    </div>
+    <!--* End of mobileNavBar -->
+
+    <div class="herosection" id="herosectionx">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+
+                <img src="" style="width:100%" id="heroslide_one_img">
+                <div class="text">
+                    <div class="main-text">
+                        <h1 id="heroslide_one_heading"></h1>
+                        <div class="slide-text-description">
+                            <p id="heroslide_one_text">
+                            </p>
+                        </div>
+                        <a href="#card-b-8"><i class="bi bi-play-btn-fill"></i> Play now</a>
+                        <a href="#"><i class="bi bi-play-fill"></i> Play Thriller</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="" style="width:100%" id="heroslide_two_img">
+                <div class="text">
+                    <div class="main-text">
+                        <h1 id="heroslide_two_heading">Gatlopp</h1>
+                        <div class="slide-text-description">
+                            <p id="heroslide_two_text">
+
+                            </p>
+                        </div>
+                        <a href="#card-b-11"><i class="bi bi-play-btn-fill"></i> Play now</a>
+                        <a href="#"><i class="bi bi-play-fill"></i> Play Thriller</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="" style="width:100%" id="heroslide_three_img">
+                <div class="text">
+                    <div class="main-text">
+                        <h1 id="heroslide_three_heading"></h1>
+                        <div class="slide-text-description">
+                            <p id="heroslide_three_text">
+
+                            </p>
+                        </div>
+                        <a href="#card-b-1"><i class="bi bi-play-btn-fill"></i> Play now</a>
+                        <a href="#"><i class="bi bi-play-fill"></i> Play Thriller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--* Movie Card Section  -->
+    <div class="movieSection" id="movieSection">
+        <div class="newmoves_sec">
+            <div class="movetitle">
+                <h2>Newly Released</h2>
+                <span></span>
+            </div>
+            <div class="movieCard_continer" id="New_movieCard_continer">
+            </div>
+            <div class="MoreMovie_message" id="NewMovie_message">
+
+            </div>
+
+        </div>
+        <div class="more_moves_sec" id="more_moves_sec">
+            <div class="movetitle">
+                <h2>More Movies </h2>
+                <span></span>
+            </div>
+            <div class="movieCard_continer" id="Action_MoviesCard_continer">
+
+            </div>
+            <div class="MoreMovie_message" id="MoreMovie_message">
+
+            </div>
+            <!-- <div class="loader-cont">
+                <ul>
+                    <li style="--delay: 0s">L</li>
+                    <li style="--delay: 0.2s">O</li>
+                    <li style="--delay: 0.4s">A</li>
+                    <li style="--delay: 0.6s">D</li>
+                    <li style="--delay: 0.8s">I</li>
+                    <li style="--delay: 1s">N</li>
+                    <li style="--delay: 1.2s">G</li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <!-- * Movie Details Section -->
+
+
+
+    <div class="more_btn-cont">
+        <button type="button" id="movie_list_see_more_btn"> See More </button>
+    </div>
+
+    <div class="newsletter_section">
+        <h1>newsletter</h1>
+        <p>subscribe to our news letter. Be the first to get updated any time we release new movie(s).</p>
+        <div class="Newsletter_form_cont">
+            <form action="">
+                <div>
+                    <input type="email" id="" placeholder="Email" required>
+                    <button type="submit">Subscribe!</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!--* search modals  -->
+    <div class="modalcont_non_Active" id="modal_cont">
+        <div class="searchmodal" id="searchmodal">
+            <h1 class="searchmodal_title">search for a Movie <i class="bi bi-search"></i></h1>
+            <div class="input_form_holder">
+
+                <input type="text" name="" id="Movieinput" placeholder="Movie Name">
+
+            </div>
+            <div class="search_result_cont" id="">
+                <ul id="Ul_movie_list_cont">
+                    <h1 class="search_ul_text"> Search For your favorite Movie</h1>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- * footer section -->
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">ORACLE</h1>
+            <h2>Contact</h2>
+            <address>
+                5534 Somewhere In Awka 92193-10212<br>
+
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title"> Socail Media</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">FaceBook</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Instagrame</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> Whatsapp</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Quick links</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#"> Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> TV Shows</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> Movies</a>
+                    </li>
+
+                    <li>
+                        <a href="#">New & popular</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> New Movies</a>
+                    </li>
+                    <li>
+                        <a href="#"> Popular TV Shows</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Action Movies</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2023 Oracle. All rights reserved.</p>
+
+            <div class="legal__links">
+                <span>Made by <span class="heart">♥</span> Oracle_dev</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script type="module" src="/js/movie.js"></script>
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>
