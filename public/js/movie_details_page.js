@@ -122,7 +122,7 @@ loadin_det_cont.style.display = "none";
         NewDownloadWindow = window.open(Nurl);
         setTimeout(() => {
           NewDownloadWindow.close();
-        }, 140000);
+        }, 120000);
       });
       movieRatingFunction(single_Movie.movielistApi.rating, AllvideoRating);
     };
